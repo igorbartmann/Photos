@@ -33,3 +33,38 @@ C:\Users\Acer Aspire\api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.Open
 C:\Users\Acer Aspire\api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Acer Aspire\api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Acer Aspire\api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\appsettings.Development.json
+C:\Projetos\Photos\api\bin\Debug\net6.0\appsettings.json
+C:\Projetos\Photos\api\bin\Debug\net6.0\api.exe
+C:\Projetos\Photos\api\bin\Debug\net6.0\api.deps.json
+C:\Projetos\Photos\api\bin\Debug\net6.0\api.runtimeconfig.json
+C:\Projetos\Photos\api\bin\Debug\net6.0\api.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\api.pdb
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.csproj.AssemblyReference.cache
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.AssemblyInfoInputs.cache
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.AssemblyInfo.cs
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.csproj.CoreCompileInputs.cache
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cs
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.MvcApplicationPartsAssemblyInfo.cache
+C:\Projetos\Photos\api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Projetos\Photos\api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Projetos\Photos\api\obj\Debug\net6.0\scopedcss\bundle\api.styles.css
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.csproj.CopyComplete
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.dll
+C:\Projetos\Photos\api\obj\Debug\net6.0\refint\api.dll
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.pdb
+C:\Projetos\Photos\api\obj\Debug\net6.0\api.genruntimeconfig.cache
+C:\Projetos\Photos\api\obj\Debug\net6.0\ref\api.dll

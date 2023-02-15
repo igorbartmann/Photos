@@ -1,13 +1,14 @@
 import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup, Validators } from "@angular/forms";
-import { Router } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { AuthService } from "src/app/core/auth/auth.service";
 import { PlatformDetectorService } from "src/app/core/platform-detector/platform-detector.service";
 
 @Component({
     templateUrl: './signin.component.html'
 })
-export class SignInComponent implements OnInit{ 
+export class SignInComponent implements OnInit{
+    redirectUrl!: string | null;
     loginForm!: FormGroup;
     @ViewChild('inputUserName') userNameInput!: ElementRef<HTMLInputElement>;
 
@@ -15,10 +16,13 @@ export class SignInComponent implements OnInit{
         private formBuilder: FormBuilder, 
         private authService: AuthService,
         private router: Router,
+        private activatedRoute: ActivatedRoute,
         private platformDetectorService: PlatformDetectorService) { }
 
 
     ngOnInit(): void {
+        this.redirectUrl = this.activatedRoute.snapshot.paramMap.get('redirectTo');
+
         this.loginForm = this.formBuilder.group({
             userName: new FormControl('', Validators.required),
             password: new FormControl('', Validators.required)
@@ -39,7 +43,9 @@ export class SignInComponent implements OnInit{
                 .login(userName, password)
                 .subscribe(
                     response => { 
-                        this.router.navigateByUrl('photos/list');
+                        let url = this.redirectUrl ?? 'photos/list';
+
+                        this.router.navigateByUrl(url);
                     },
                     error => { 
                         this.loginForm.reset(); 

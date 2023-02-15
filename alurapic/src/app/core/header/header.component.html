@@ -1,9 +1,9 @@
 <header class="fixed-top">
     <nav class="navbar navbar-light bg-white">
         <app-menu #menu>
-            <ul class="list-unstyled">
-                <li><a showIfLogged [routerLink]="['photos/list']" (click)="menu.toggleShow()">Timeline</a></li>
-                <li><a showIfLogged [routerLink]="['photos/form']" (click)="menu.toggleShow()">Upload</a></li>
+            <ul class="list-unstyled" showIfLogged>
+                <li><a [routerLink]="['photos/list']" (click)="menu.toggleShow()">Timeline</a></li>
+                <li><a [routerLink]="['photos/form']" (click)="menu.toggleShow()">Upload</a></li>
             </ul>
         </app-menu>
 

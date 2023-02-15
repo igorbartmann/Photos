@@ -1966,11 +1966,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer Aspire\\api\\api.csproj",
+      "projectUniqueName": "C:\\Projetos\\Photos\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Users\\Acer Aspire\\api\\api.csproj",
+      "projectPath": "C:\\Projetos\\Photos\\api\\api.csproj",
       "packagesPath": "C:\\Users\\Acer Aspire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer Aspire\\api\\obj\\",
+      "outputPath": "C:\\Projetos\\Photos\\api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

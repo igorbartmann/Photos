@@ -7,9 +7,7 @@ import { AuthService } from "./auth.service";
 export class AuthGuard implements CanActivate {
     constructor(private authService: AuthService, private router: Router) { }
 
-    canActivate(
-        route: ActivatedRouteSnapshot, 
-        state: RouterStateSnapshot): boolean | Observable<boolean> {
+    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> {
         return this.authService
             .verifyAuthentication()
             ?.pipe(
@@ -19,7 +17,7 @@ export class AuthGuard implements CanActivate {
                 }), 
                 catchError(async () => {
                     // Se entrou aqui, não está autenticado.
-                    this.router.navigateByUrl('/home');
+                    this.router.navigate(['/home'], { queryParams: { redirectTo: state.url }});
                     return false;
                 })
             ) ?? false;

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2iNaeBBbNEoNgEuoUZJX2mog7BgZt4CIOso/xY0CTkmTnSwqfc01Fz1SV+HEzEgsK3WHrfrg7V603TiBy+VOsw==",
+  "dgSpecHash": "jQ3xKFaiDxIGr9hnyqTT2dBbMVyR6HEIwmRpE1wBPbkaBftPCOmg5AXi2ELLREH8p5tCgFz36huzaK0IBN9/bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer Aspire\\api\\api.csproj",
+  "projectFilePath": "C:\\Projetos\\Photos\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer Aspire\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Acer Aspire\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

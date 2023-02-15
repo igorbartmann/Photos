@@ -6,7 +6,7 @@ import { TokenService } from "src/app/core/token/token.service";
     selector: '[showIfLogged]'
 })
 export class ShowIfLoggedDirective implements OnInit {
-    defaultDisplayValue!: string;
+    elementDefaultDisplay!: string;
 
     constructor(
         private element: ElementRef<any>, 
@@ -16,7 +16,7 @@ export class ShowIfLoggedDirective implements OnInit {
 
     ngOnInit(): void {
         // Obtém o display do elemento (antes de aplicar a diretiva)!
-        this.defaultDisplayValue = getComputedStyle(this.element.nativeElement).display;
+        this.elementDefaultDisplay = getComputedStyle(this.element.nativeElement).display;
 
         this.tokenService
             .notifyWhenChangeToken()
@@ -50,10 +50,14 @@ export class ShowIfLoggedDirective implements OnInit {
     }
 
     private setDefaultDisplay() {
-        this.render.setStyle(this.element.nativeElement, 'display', this.defaultDisplayValue);
+        this.setDisplay(this.elementDefaultDisplay);
     }
 
     private setDisplayNone() {
-        this.render.setStyle(this.element.nativeElement, 'display', 'none');
+        this.setDisplay('none');
+    }
+
+    private setDisplay(displayValue: string) {
+        this.render.setStyle(this.element.nativeElement, 'display', displayValue);
     }
 }

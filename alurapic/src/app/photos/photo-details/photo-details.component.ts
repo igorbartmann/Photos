@@ -58,7 +58,7 @@ export class PhotoDetailsComponent implements OnInit {
             .subscribe(
                 () => {
                     this.alertService.success('Photo deleted!');
-                    this.router.navigateByUrl('/photos/list');
+                    this.router.navigateByUrl('/photos/list', { replaceUrl: true }); // replaceUrl is to clear the history. (It is to not allow user return to this page).
                 },
                 error => {
                     console.error(error);
