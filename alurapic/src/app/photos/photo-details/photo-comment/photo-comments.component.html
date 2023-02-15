@@ -1,0 +1,24 @@
+<div *ngIf="comments">
+    <ul class="list-unstyled comment-list">
+        <li *ngFor="let comment of comments">
+            <a class="text-dark font-weight-bold mr-1" [routerLink]="['/photos/list']">{{ comment.userName }}</a>
+            <em>&nbsp;{{ comment.date | date:'dd-MM-yyyy HH:mm' }}</em>
+            <p class="break-word mb-2">{{ comment.description }}</p>
+        </li>
+    </ul>
+    
+    <div class="mt-4">
+        <form [formGroup]="commentForm" (submit)="save()">
+            <div class="input-group">
+                <textarea formControlName="comment" class="form-control"></textarea>
+                <app-vmessage *ngIf="commentForm.get('comment')?.hasError('minlength')" textMessage="The min length is 2 characters."></app-vmessage>
+                <app-vmessage *ngIf="commentForm.get('comment')?.hasError('maxlength')" textMessage="The max length is 300 characters."></app-vmessage>
+                <div class="input-group-append">
+                    <button [disabled]="commentForm.invalid" type="submit" class="btn btn-primary pull-left">
+                        Publish
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

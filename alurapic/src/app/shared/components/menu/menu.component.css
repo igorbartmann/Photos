@@ -1,0 +1,48 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    background: #9e9e9e;
+    transition: left 0.5s ease-in;
+}
+
+.active-menu {
+    left: 0px;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 300px;
+    transition: all 0.5s ease-out;
+}
+
+.active-menu .navbar-brand {
+    flex-direction: row-reverse;
+    margin-left: 0;
+}
+
+.menu-bar {
+   padding: 15px;
+}
+
+.defocus {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #5757575b;
+}
+
+.defocus-active {
+    display: block;
+}

@@ -1,0 +1,12 @@
+<div class="menu {{ isShow ? 'active-menu' : ''}}">
+    <div class="navbar-brand">
+        <i class="fa fa-bars mr-2" (click)="toggleShow()"></i>
+        <span>ALURAPIC</span>
+    </div>
+
+    <div class="menu-bar">
+        <ng-content></ng-content>
+    </div>
+</div>
+
+<div class="defocus {{ isShow ? 'defocus-active' : ''}}" (click)="toggleShow()"></div>

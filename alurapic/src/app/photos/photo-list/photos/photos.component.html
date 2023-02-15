@@ -1,0 +1,19 @@
+<p *ngIf="photos.length == 0" class="text-center text-muted">Sorry, no photos!</p>
+
+<ol class="list-unstyled row">
+    <li *ngFor="let row of rows" class="row no-gutters">
+        <div *ngFor="let photo of row" class="col-4" appDarkenOnHover>
+            <a [routerLink]="['/photos/details', photo.id]">
+                <app-card [title]="photo.description">
+                    <app-photo 
+                        [url]='photo.url'
+                        [textoAlternativo]="photo.description">
+                    </app-photo>
+                    <div class="text-center p-1">
+                        <i aria-hidden="true" class="fa fa-heart-o fa-1x mr-2">{{ photo.numberLiks }}</i>
+                    </div>
+                </app-card>
+            </a>
+        </div>
+    </li>
+</ol>

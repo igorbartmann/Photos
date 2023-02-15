@@ -1,0 +1,5 @@
+<small *ngIf="severity === 'success'; else danger" class="text-success d-block mt-2">{{ textMessage }}</small>
+
+<ng-template #danger>
+    <small class="text-danger d-block mt-2">{{ textMessage }}</small>
+</ng-template>

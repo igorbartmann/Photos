@@ -1,0 +1,18 @@
+<div class="card border-light text-center">
+    <h4 class="card-header" *ngIf="title.length > 0">{{ title }}</h4>
+    <div class="card-block text-justify">
+        <!-- Indica ao angular que é aqui que entra o conteúdo de quem chamar o componente.
+            Exemplo:
+            <app-card title="Photo">
+                <app-photo    <---- INICIO DO CONTEÚDO
+                    [url]="photo.url"
+                    [textoAlternativo]="photo.description">
+                </app-photo>
+                <div class="text-center p-1">
+                    <i aria-hidden="true" class="fa fa-heart-o fa-1x mr-2">{{ photo.numberLiks }}</i>
+                </div>       <---- FIM DO CONTEÚDO
+            </app-card> 
+        -->
+        <ng-content></ng-content>
+    </div>
+</div>

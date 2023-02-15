@@ -1,0 +1,37 @@
+<div class="container">
+    <form [formGroup]="photoForm" class="row" (submit)="upload()">
+        <div class="col-md-6 text-center">
+            <div class="form-group" *ngIf="!preview; else showPreviewImage">
+                <button immediateClick type="button" (click)="fileInput.click()" class="btn btn-primary">
+                    <i class="fa fa-image fa-4x aling-midle"></i>
+                </button>
+                <input hidden #fileInput type="file" accept="image/*" (change)="onFileChange($event)">
+                <app-vmessage textMessage="Please, select a photo" *ngIf="photoForm.get('file')?.hasError('required')"></app-vmessage>
+            </div>
+            <ng-template #showPreviewImage>
+                <app-photo [url]="preview" textoAlternativo="Preview"></app-photo>
+            </ng-template>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <textarea formControlName="description" class="form-control form-control-sm" placeholder="photo description"></textarea>
+                <app-vmessage textMessage="The description must be lower then 300 characters." *ngIf="photoForm.get('description')?.hasError('maxlength')"></app-vmessage>
+            </div>
+
+            <div class="form-group">
+                <label class="text-mutet">Allow comments <input formControlName="allowComments" type="checkbox"></label>
+            </div>
+
+            <div *ngIf="!percentDone;else templateUpload">
+                <button [disabled]="photoForm.invalid" type="submit" class="btn btn-primary btn-clock">Upload</button>
+                <a class="btn btn-secundary btn-clock" [routerLink]="['']">Cancel</a>
+            </div>
+            <ng-template #templateUpload>
+                <div class="text-center display-4">
+                    <span>Uploading {{ percentDone }}%</span>
+                </div>
+            </ng-template>
+        </div>
+    </form>
+</div>

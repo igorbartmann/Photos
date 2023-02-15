@@ -1,0 +1,8 @@
+.btn-secundary {
+    border: 1px solid #888888;
+}
+
+.btn-secundary:hover {
+    color: #EEEEEE;
+    background-color: #999999;
+}
