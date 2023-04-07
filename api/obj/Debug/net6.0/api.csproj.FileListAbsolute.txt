@@ -68,3 +68,4 @@ C:\Projetos\Photos\api\obj\Debug\net6.0\refint\api.dll
 C:\Projetos\Photos\api\obj\Debug\net6.0\api.pdb
 C:\Projetos\Photos\api\obj\Debug\net6.0\api.genruntimeconfig.cache
 C:\Projetos\Photos\api\obj\Debug\net6.0\ref\api.dll
+C:\Projetos\Photos\api\bin\Debug\net6.0\web.config

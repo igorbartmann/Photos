@@ -28,7 +28,12 @@ export class TokenService
         return !!this.getToken();
     }
 
+    hasRefreshToken() : boolean {
+        return !!this.getRefreshToken();
+    }
+
     removeToken() {
+        //window.localStorage.clear();
         window.localStorage.removeItem(localStorageToken)
         window.localStorage.removeItem(localStorageRefreshToken)
         this.changedToken();

@@ -1,7 +1,6 @@
 import { LocationStrategy, PathLocationStrategy } from "@angular/common";
 import { ErrorHandler, Injectable, Injector } from "@angular/core";
 import { Router } from "@angular/router";
-import * as StackTrace from 'stacktrace-js';
 
 import { LogService } from "./log.service";
 import { LogCreate } from "./log";

@@ -20,9 +20,15 @@ export class AlertComponenet {
                     return;
                 }
 
-                this.alerts.push(alert);
+                this.addAlert(alert);
                 setTimeout(() => this.removeAlert(alert), this.timeout);
             });
+    }
+
+    addAlert(alertToAdd: Alert) {
+        if (!this.alerts.some(alert => alert.type === alertToAdd.type && alert.message === alertToAdd.message)) {
+            this.alerts.push(alertToAdd);
+        }
     }
 
     removeAlert(alertToRemove: Alert) {
